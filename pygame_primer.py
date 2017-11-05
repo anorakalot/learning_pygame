@@ -15,7 +15,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self):
         #call pygame sprite constructor
         pygame.sprite.Sprite.__init__(self)
-        self.surf = pygame.image.load('/home/anorak/Documents/projects/pygame_learning/pygame_assets/plane.png')
+        self.surf = pygame.image.load('plane.png')
         #testing surface
         #for rectangle player object
         #self.surf = pygame.Surface((75,25))
@@ -54,7 +54,7 @@ class Enemy(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         #self.surf = pygame.Surface((20,10))
         #self.surf.fill((255,255,255))
-        self.surf = pygame.image.load('/home/anorak/Documents/projects/pygame_learning/pygame_assets/missile.png')
+        self.surf = pygame.image.load('missile.png')
         self.rect = self.surf.get_rect(center = (random.randint(820,900),random.randint(0,800)))
         self.speed = random.randint(5,20)
 
@@ -66,7 +66,7 @@ class Enemy(pygame.sprite.Sprite):
 class Cloud(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
-        self.surf = pygame.image.load('/home/anorak/Documents/projects/pygame_learning/pygame_assets/cloud_2.png')
+        self.surf = pygame.image.load('cloud_2.png')
         self.rect = self.surf.get_rect(center = (random.randint(810,900),random.randint(0,800)))
         self.speed = random.randint(3,5)
 
